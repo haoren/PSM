@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+    android:background="#ffffffff" 
+    android:focusable="true" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.maps.MapView 
+        android:id="@id/mapview" 
+        android:focusable="true" 
+        android:focusableInTouchMode="true" 
+        android:clickable="true" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" 
+        android:apiKey="09neggt_6d9PchsjJWXcVtEqf1ur4ZkvYOq3u8w" />
+    <LinearLayout 
+        android:orientation="vertical" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" 
+            android:id="@id/linearLayout1" 
+            android:background="@color/bar_opaq_top"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:weightSum="1.0">
+            <ImageButton android:id="@id/ivDummyTarget" 
+                android:background="#00000000" 
+                android:focusable="true" 
+                android:visibility="invisible" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:src="@drawable/target_selector" 
+                android:scaleType="center" />
+            <TextView 
+                android:textSize="21.0sp" 
+                android:textStyle="bold" 
+                android:textColor="#ffffffff" 
+                android:gravity="center" 
+                android:id="@id/tVTitle" 
+                android:layout_width="0.0dip" 
+                android:layout_height="wrap_content" 
+                android:text="@string/etAddress" 
+                android:layout_weight="1.0" />
+            <ImageButton 
+                android:layout_gravity="center" 
+                android:id="@id/ivTarget" 
+                android:background="#00000000" 
+                android:focusable="true" 
+                android:layout_width="26.0dip" 
+                android:layout_height="26.0dip" 
+                android:layout_marginRight="10.0dip" 
+                android:src="@drawable/target_selector" 
+                android:scaleType="fitXY" />
+        </LinearLayout>
+        <EditText 
+            android:textSize="18.0sp" 
+            android:textStyle="bold" 
+            android:textColor="#ffffffff" 
+            android:gravity="center" 
+            android:id="@id/etAddress" 
+            android:background="@color/bar_transp" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:text="@string/etAddress" 
+            android:ems="10" />
+        <ImageView 
+            android:gravity="center" 
+            android:id="@id/ivHeaderTransp" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:src="@drawable/header_transp" 
+            android:scaleType="fitXY" 
+            android:adjustViewBounds="true" />
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_gravity="right" 
+        android:orientation="vertical" 
+        android:id="@id/linearLayout3" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="100.0dip" 
+        android:layout_marginRight="5.0dip">
+        <Button 
+            android:textColor="#ffffffff" 
+            android:id="@id/imageButtonMaps" 
+            android:background="@drawable/button_selector_map" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="@string/bMap" />
+        <Button 
+            android:textColor="#ffffffff" 
+            android:id="@id/imageButtonTerrain" 
+            android:background="@drawable/button_selector_map" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="@string/bSatellite" />
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_gravity="bottom" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content">
+        <LinearLayout 
+            android:gravity="center"
+            android:id="@id/linearLayout2" 
+            android:background="@color/bar_opaq_bottom" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content">
+            <Button 
+                android:textSize="20.0sp" 
+                android:textStyle="bold" 
+                android:textColor="#ff000000" 
+                android:layout_gravity="center" 
+                android:id="@id/bOrder" 
+                android:background="@drawable/button_normal_selector" 
+                android:visibility="gone" 
+                android:layout_width="0.0dip" 
+                android:layout_height="50.0dip" 
+                android:layout_margin="5.0dip" 
+                android:text="@string/bOrder" 
+                android:layout_weight="1.0" />
+            <Button android:textSize="20.0sp" 
+                android:textStyle="bold" 
+                android:textColor="#ffffffff" 
+                android:id="@id/bCancel" 
+                android:background="@drawable/button_selector_black" 
+                android:visibility="gone" 
+                android:layout_width="wrap_content" 
+                android:layout_height="fill_parent" 
+                android:layout_marginLeft="5.0dip" 
+                android:text="@string/bBack" 
+                android:shadowColor="#ff000000" 
+                android:shadowDx="1.0" 
+                android:shadowDy="1.0" 
+                android:shadowRadius="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView 
+        android:layout_gravity="center" 
+        android:id="@id/ivPointer" 
+        android:layout_width="35.0dip" 
+        android:layout_height="40.0dip" 
+        android:layout_marginTop="-20.0dip" 
+        android:src="@drawable/icon_map" 
+        android:scaleType="fitXY" />
+</FrameLayout>

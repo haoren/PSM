@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:gravity="center" 
+    android:orientation="vertical" 
+    android:background="@drawable/bgred" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView 
+        android:textSize="21.0sp" 
+        android:textStyle="bold" 
+        android:textColor="#ffffffff" 
+        android:gravity="center" 
+        android:id="@id/tvOrderHistory" 
+        android:background="@color/bar_opaq_top" 
+        android:paddingTop="7.0dip" 
+        android:paddingBottom="7.0dip" 
+        android:visibility="visible"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:text="@string/tvOrderHistory" />
+    <TextView 
+        android:textSize="18.0sp" 
+        android:textStyle="bold" 
+        android:textColor="#ffffffff" 
+        android:gravity="center" 
+        android:id="@id/tvNoHistory" 
+        android:visibility="gone" 
+        android:layout_width="wrap_content" 
+        android:layout_height="0.0dip" 
+        android:text="@string/tvNoHistory" 
+        android:layout_weight="1.0" />
+    <ImageView 
+        android:gravity="center" 
+        android:id="@id/ivHeaderTransp"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:src="@drawable/header_transp" 
+        android:scaleType="fitXY" 
+        android:adjustViewBounds="true" />
+    <ListView 
+        android:id="@id/listHistory" 
+        android:fadingEdge="none" 
+        android:layout_width="fill_parent" 
+        android:layout_height="0.0dip" 
+        android:layout_marginLeft="5.0dip" 
+        android:layout_marginRight="5.0dip" 
+        android:divider="#00000000" 
+        android:dividerHeight="5.0dip" 
+        android:layout_weight="1.0" />
+    <ImageView android:gravity="center" 
+        android:id="@id/ivFooterTransp" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:src="@drawable/footer_transp" 
+        android:scaleType="fitXY" 
+        android:adjustViewBounds="true" />
+    <LinearLayout 
+        android:id="@id/linearLayout2" 
+        android:background="@color/bar_opaq_bottom" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:weightSum="4.0">
+        <Button 
+            android:textSize="10.0sp" 
+            android:textStyle="bold" 
+            android:textColor="#ffffffff" 
+            android:gravity="bottom|center" 
+            android:id="@id/bHome" 
+            android:background="@drawable/button_nav_home_selector" 
+            android:layout_width="0.0dip" 
+            android:layout_height="45.0dip" 
+            android:layout_marginLeft="3.0dip" 
+            android:layout_marginTop="3.0dip" 
+            android:layout_marginBottom="3.0dip" 
+            android:text="@string/bHome" 
+            android:layout_weight="1.0" />
+        <Button 
+            android:textSize="10.0sp" 
+            android:textStyle="bold" 
+            android:textColor="#ffffffff" 
+            android:gravity="bottom|center" 
+            android:id="@id/bPhoneOrder" 
+            android:background="@drawable/button_nav_dispatch_selector" 
+            android:layout_width="0.0dip" 
+            android:layout_height="45.0dip" 
+            android:layout_marginLeft="3.0dip" 
+            android:layout_marginTop="3.0dip" 
+            android:layout_marginBottom="3.0dip" 
+            android:text="@string/bDispatch" 
+            android:layout_weight="1.0" />
+        <Button 
+            android:textSize="10.0sp" 
+            android:textStyle="bold" 
+            android:textColor="#ffffffff" 
+            android:gravity="bottom|center" 
+            android:id="@id/bHistory" 
+            android:background="@drawable/button_nav_history_pressed_selector" 
+            android:layout_width="0.0dip" 
+            android:layout_height="45.0dip" 
+            android:layout_marginLeft="3.0dip" 
+            android:layout_marginTop="3.0dip" 
+            android:layout_marginBottom="3.0dip" 
+            android:text="@string/bHistory" 
+            android:layout_weight="1.0" />
+        <Button 
+            android:textSize="10.0sp" 
+            android:textStyle="bold" 
+            android:textColor="#ffffffff" 
+            android:gravity="bottom|center" 
+            android:id="@id/bFeedback" 
+            android:background="@drawable/button_nav_opinion_selector" 
+            android:layout_width="0.0dip" 
+            android:layout_height="45.0dip" 
+            android:layout_marginLeft="3.0dip" 
+            android:layout_marginTop="3.0dip" 
+            android:layout_marginRight="3.0dip" 
+            android:layout_marginBottom="3.0dip" 
+            android:text="@string/bFeedback" 
+            android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

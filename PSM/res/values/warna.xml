@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bar_opaq_bottom">#ff4c4c4c</color>
+    <color name="bar_opaq_top">#ff313131</color>
+    <color name="bar_transp">#c4333333</color>
+    <color name="font_color_special">#ffcb241f</color>
+</resources>
